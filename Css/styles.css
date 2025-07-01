@@ -5,10 +5,12 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -38,7 +40,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('../BienestarMental.png') no-repeat center center/cover;
+    background: url('../Images/BienestarMental.png') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 0;
@@ -287,4 +289,20 @@ button:hover {
     font-size: 1.2rem;
     text-align: center;
     background-color: #fafafa;
+}
+
+#progress-bar-container {
+    background-color: #ddd;
+    border-radius: 20px;
+    height: 20px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#progress-bar {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 20px;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
 }
