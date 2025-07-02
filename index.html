@@ -85,6 +85,12 @@
                     <p>Video: Meditación Guiada para Principiantes</p>
                 </a>
             </div>
+            <div class="resource-item">
+                <a href="articulos/yoga-principiantes-estiramientos.html" class="resource-link">
+                    <img src="images/yoga-principiantes-estiramientos.png" alt="Yoga para Principiantes">
+                    <p>Video: Meditación Guiada para Principiantes</p>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -93,52 +99,233 @@
             <h2>Test de Bienestar Mental</h2>
             <p>Responde a las siguientes preguntas para evaluar tu nivel de bienestar mental:</p>
 
-            <div id="progress-bar-container">
-                <div id="progress-bar"></div>
-            </div>
-
             <form id="quizForm">
                 <div class="question">
-                    <p><strong>1. ¿Con qué frecuencia te sientes estresado/a?</strong></p>
-                    <label><input type="radio" name="stress" value="2"> Casi nunca</label><br>
-                    <label><input type="radio" name="stress" value="1"> A veces</label><br>
-                    <label><input type="radio" name="stress" value="0"> Con frecuencia</label>
+                    <p>¿Te cuesta avanzar por algún problema que te bloquea?</p>
+                    <label><input type="radio" name="q1" value="0"> Nunca</label>
+                    <label><input type="radio" name="q1" value="1"> A veces</label>
+                    <label><input type="radio" name="q1" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q1" value="3"> Siempre</label>
                 </div>
 
                 <div class="question">
-                    <p><strong>2. ¿Cuántas horas de sueño sueles tener cada noche?</strong></p>
-                    <label><input type="radio" name="sleep" value="2"> 7-9 horas</label><br>
-                    <label><input type="radio" name="sleep" value="1"> 5-7 horas</label><br>
-                    <label><input type="radio" name="sleep" value="0"> Menos de 5 horas</label>
+                    <p>¿Te agobia salir solo de casa o estar con mucha gente?</p>
+                    <label><input type="radio" name="q2" value="0"> Nunca</label>
+                    <label><input type="radio" name="q2" value="1"> A veces</label>
+                    <label><input type="radio" name="q2" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q2" value="3"> Siempre</label>
                 </div>
 
                 <div class="question">
-                    <p><strong>3. ¿Te sientes generalmente en paz contigo mismo/a?</strong></p>
-                    <label><input type="radio" name="peace" value="2"> Sí, la mayoría del tiempo</label><br>
-                    <label><input type="radio" name="peace" value="1"> A veces</label><br>
-                    <label><input type="radio" name="peace" value="0"> No, me siento ansioso/a la mayor parte del tiempo</label>
+                    <p>¿Sientes que lo que antes te gustaba ya no te interesa?</p>
+                    <label><input type="radio" name="q3" value="0"> Nunca</label>
+                    <label><input type="radio" name="q3" value="1"> A veces</label>
+                    <label><input type="radio" name="q3" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q3" value="3"> Siempre</label>
                 </div>
 
                 <div class="question">
-                    <p><strong>4. ¿Con qué frecuencia practicas actividades que te relajen?</strong></p>
-                    <label><input type="radio" name="relaxation" value="2"> Varias veces a la semana</label><br>
-                    <label><input type="radio" name="relaxation" value="1"> De vez en cuando</label><br>
-                    <label><input type="radio" name="relaxation" value="0"> Casi nunca</label>
+                    <p>¿Con qué frecuencia sientes que todo va mal?</p>
+                    <label><input type="radio" name="q4" value="0"> Nunca</label>
+                    <label><input type="radio" name="q4" value="1"> A veces</label>
+                    <label><input type="radio" name="q4" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q4" value="3"> Siempre</label>
                 </div>
 
                 <div class="question">
-                    <p><strong>5. ¿Te sientes conectado/a emocionalmente con tus amigos y familiares?</strong></p>
-                    <label><input type="radio" name="connection" value="2"> Sí, siempre</label><br>
-                    <label><input type="radio" name="connection" value="1"> A veces</label><br>
-                    <label><input type="radio" name="connection" value="0"> No, me siento desconectado/a</label>
+                    <p>¿Sueles reprimir tus emociones y sentimientos?</p>
+                    <label><input type="radio" name="q5" value="0"> Nunca</label>
+                    <label><input type="radio" name="q5" value="1"> A veces</label>
+                    <label><input type="radio" name="q5" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q5" value="3"> Siempre</label>
                 </div>
 
+                <div class="question">
+                    <p>¿Duermes bien y te despiertas descansado?</p>
+                    <label><input type="radio" name="q6" value="3"> Siempre</label>
+                    <label><input type="radio" name="q6" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q6" value="1"> A veces</label>
+                    <label><input type="radio" name="q6" value="0"> Nunca</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Te sientes en paz contigo mismo?</p>
+                    <label><input type="radio" name="q7" value="3"> Siempre</label>
+                    <label><input type="radio" name="q7" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q7" value="1"> A veces</label>
+                    <label><input type="radio" name="q7" value="0"> Nunca</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Practicas actividades de relajación?</p>
+                    <label><input type="radio" name="q8" value="3"> Siempre</label>
+                    <label><input type="radio" name="q8" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q8" value="1"> A veces</label>
+                    <label><input type="radio" name="q8" value="0"> Nunca</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Te sientes conectado con la naturaleza?</p>
+                    <label><input type="radio" name="q9" value="3"> Siempre</label>
+                    <label><input type="radio" name="q9" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q9" value="1"> A veces</label>
+                    <label><input type="radio" name="q9" value="0"> Nunca</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Haces algo para desconectar del estrés?</p>
+                    <label><input type="radio" name="q10" value="3"> Siempre</label>
+                    <label><input type="radio" name="q10" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q10" value="1"> A veces</label>
+                    <label><input type="radio" name="q10" value="0"> Nunca</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Duermes al menos 7 horas por noche?</p>
+                    <label><input type="radio" name="q11" value="0"> Nunca</label>
+                    <label><input type="radio" name="q11" value="1"> A veces</label>
+                    <label><input type="radio" name="q11" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q11" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Tienes a alguien con quien hablar de tus problemas?</p>
+                    <label><input type="radio" name="q12" value="0"> Nunca</label>
+                    <label><input type="radio" name="q12" value="1"> A veces</label>
+                    <label><input type="radio" name="q12" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q12" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Haces ejercicio físico cada semana?</p>
+                    <label><input type="radio" name="q13" value="0"> Nunca</label>
+                    <label><input type="radio" name="q13" value="1"> A veces</label>
+                    <label><input type="radio" name="q13" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q13" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Sientes ilusión por tus objetivos?</p>
+                    <label><input type="radio" name="q14" value="0"> Nunca</label>
+                    <label><input type="radio" name="q14" value="1"> A veces</label>
+                    <label><input type="radio" name="q14" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q14" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Te desconectas del móvil o redes sociales a veces?</p>
+                    <label><input type="radio" name="q15" value="0"> Nunca</label>
+                    <label><input type="radio" name="q15" value="1"> A veces</label>
+                    <label><input type="radio" name="q15" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q15" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Tienes momentos de ocio solo para ti?</p>
+                    <label><input type="radio" name="q16" value="0"> Nunca</label>
+                    <label><input type="radio" name="q16" value="1"> A veces</label>
+                    <label><input type="radio" name="q16" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q16" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Disfrutas de actividades creativas o hobbies?</p>
+                    <label><input type="radio" name="q17" value="0"> Nunca</label>
+                    <label><input type="radio" name="q17" value="1"> A veces</label>
+                    <label><input type="radio" name="q17" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q17" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Puedes relajarte sin sentir culpa?</p>
+                    <label><input type="radio" name="q18" value="0"> Nunca</label>
+                    <label><input type="radio" name="q18" value="1"> A veces</label>
+                    <label><input type="radio" name="q18" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q18" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Te sientes comprendido por alguien cercano?</p>
+                    <label><input type="radio" name="q19" value="0"> Nunca</label>
+                    <label><input type="radio" name="q19" value="1"> A veces</label>
+                    <label><input type="radio" name="q19" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q19" value="3"> Siempre</label>
+                </div>
+
+                <div class="question">
+                    <p>¿Sientes que puedes pedir ayuda cuando la necesitas?</p>
+                    <label><input type="radio" name="q20" value="0"> Nunca</label>
+                    <label><input type="radio" name="q20" value="1"> A veces</label>
+                    <label><input type="radio" name="q20" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="q20" value="3"> Siempre</label>
+                </div>
+                
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                
                 <button type="button" onclick="calculateResult()">Ver resultados</button>
             </form>
 
             <div id="result"></div>
         </div>
     </section>
+
+    <section id="recursos" class="recursos">
+        <h2>📚 Libros Recomendados</h2>
+        <div class="libros-grid">
+            <div class="libro">
+            <h3>El Poder del Ahora</h3>
+            <p>Eckhart Tolle – Una guía para vivir el presente.</p>
+            <a href="https://www.amazon.com/-/es/poder-del-ahora-iluminaci%C3%B3n-espiritual/dp/8484452069" target="_blank">Ver en Amazon</a>
+            </div>
+            <div class="libro">
+            <h3>Respira</h3>
+            <p>James Nestor – Ciencia y práctica de la respiración consciente.</p>
+            <!-- Añade el enlace cuando tengas URL -->
+            </div>
+            <div class="libro">
+            <h3>Mindfulness para Principiantes</h3>
+            <p>Jon Kabat-Zinn – Introducción práctica a la atención plena.</p>
+            <!-- Añade el enlace cuando tengas URL -->
+            </div>
+        </div>
+
+        <h2>🎵 Playlists de Relajación</h2>
+        <div class="playlists-grid">
+        <div class="playlist">
+            <h3>Meditaciones Guiadas</h3>
+            <a href="https://open.spotify.com/playlist/37i9dQZF1DWZKyP0tcxlDn" target="_blank">Abrir en Spotify</a>
+        </div>
+        <div class="playlist">
+            <h3>Meditación Maestro – Profundo Relax</h3>
+            <a href="https://open.spotify.com/playlist/4Wvfzh7K5PWWlUdYhzDUHqV" target="_blank">Abrir en Spotify</a>
+        </div>
+        <div class="playlist">
+            <h3>30 min Meditación Transpersonal</h3>
+            <a href="https://open.spotify.com/playlist/1aTSVMI99kZvSBySHXkxq7" target="_blank">Abrir en Spotify</a>
+        </div>
+        </div>
+
+
+        <h2>✨ Técnicas de Mindfulness</h2>
+        <div class="tecnicas-grid">
+            <div class="tecnica">
+            <h3>Regla de los 4 Sentidos</h3>
+            <p>Toca 4 cosas, escucha 3 sonidos, huele 2 olores, saborea 1 cosa para volver al presente.</p>
+            </div>
+            <div class="tecnica">
+            <h3>Regla del Cuadrado</h3>
+            <p>Inhala 4 s, retén 4 s, exhala 4 s, retén 4 s — visualiza un cuadrado mental.</p>
+            </div>
+            <div class="tecnica">
+            <h3>Técnica del Hielo</h3>
+            <p>Aplica hielo en manos, cara o pies para calmar una crisis de ansiedad intensa.</p>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Testimonios -->
     <section class="testimonials">
@@ -169,7 +356,7 @@
     <!-- Pie de Página -->
     <footer>
         <p>&copy; 2025 Bienestar Mental. Todos los derechos reservados.</p>
-        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        <p><a href="privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos de Servicio</a></p>
     </footer>
 </body>
 </html>

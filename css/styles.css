@@ -305,4 +305,75 @@ button:hover {
     border-radius: 20px;
     width: 0%;
     transition: width 0.3s ease-in-out;
+    color: white; /* texto blanco dentro */
+    text-align: center; /* centra el texto */
+    line-height: 20px; /* igual a la altura de la barra */
+    font-weight: bold;
+}
+
+.recursos {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.recursos h2 {
+  margin-top: 2rem;
+  color: #333;
+}
+
+.libros-grid,
+.playlists-grid,
+.tecnicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.libro,
+.playlist,
+.tecnica {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.libro h3,
+.playlist h3,
+.tecnica h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.libro p,
+.tecnica p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+.playlist a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.playlist a:hover {
+  text-decoration: underline;
+}
+
+.libro a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.libro a:hover {
+  text-decoration: underline;
 }

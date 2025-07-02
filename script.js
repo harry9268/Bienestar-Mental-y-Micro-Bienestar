@@ -4,34 +4,36 @@ function calculateResult() {
     const progressBar = document.getElementById('progress-bar');
 
     let score = 0;
-    let totalQuestions = 5;
-    let answered = 0;
+    const totalQuestions = 20;
+    const maxScore = totalQuestions * 3;
 
-    const questions = ['stress', 'sleep', 'peace', 'relaxation', 'connection'];
-
-    questions.forEach(q => {
-        const answer = form.querySelector(`input[name="${q}"]:checked`);
+    // Recorre q1 hasta q20
+    for (let i = 1; i <= totalQuestions; i++) {
+        const answer = form.querySelector(`input[name="q${i}"]:checked`);
         if (answer) {
             score += parseInt(answer.value);
-            answered++;
+        } else {
+            resultDiv.innerHTML = "Por favor responde todas las preguntas.";
+            return;
         }
-    });
-
-    // Actualiza barra de progreso
-    let progress = (answered / totalQuestions) * 100;
-    progressBar.style.width = progress + '%';
-
-    // Muestra resultado
-    if (answered < totalQuestions) {
-        resultDiv.innerHTML = "Por favor responde todas las preguntas.";
-        return;
     }
 
-    if (score >= 8) {
-        resultDiv.innerHTML = "¡Tu bienestar mental es excelente! Sigue cuidándote.";
-    } else if (score >= 4) {
-        resultDiv.innerHTML = "Tu bienestar mental es bueno, pero podrías practicar más técnicas de relajación.";
+    // Calcula %
+    const percent = Math.round((score / maxScore) * 100);
+
+    // Rellena barra y pone texto dentro
+    progressBar.style.width = percent + '%';
+    progressBar.textContent = percent + '%';
+
+    // Mensaje final
+    let message = '';
+    if (percent >= 80) {
+        message = "¡Tu bienestar mental es excelente! Sigue cuidándote.";
+    } else if (percent >= 50) {
+        message = "Tu bienestar mental es bueno, pero podrías dedicarte más tiempo.";
     } else {
-        resultDiv.innerHTML = "Tu bienestar mental necesita atención. Explora recursos de mindfulness y meditación.";
+        message = "Tu bienestar mental necesita atención. Explora recursos de mindfulness y meditación.";
     }
+
+    resultDiv.innerHTML = `<p>${message}</p>`;
 }
