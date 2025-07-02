@@ -1,1 +1,1 @@
-Sitemap: https://harry9268.github.io/Bienestar-Mental-y-Micro-Bienestar/sitemap.txt
+Sitemap: https://harry9268.github.io/Bienestar-Mental-y-Micro-Bienestar/articulos/sitemap.xml
