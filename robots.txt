@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bienestar-mental-y-micro-bienestar.netlify.app/sitemap.xml
+Sitemap: https://harry9268.github.io/Bienestar-Mental-y-Micro-Bienestar/sitemap.xml
