@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://harry9268.github.io/Bienestar-Mental-y-Micro-Bienestar/sitemap.xml
+Sitemap: https://bienestarmetal.top/sitemap.xml
