@@ -70,6 +70,24 @@ nav a:hover {
     color: white;
 }
 
+.btn-principal {
+  background-color: #ffffff;
+  color: #4CAF50;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+
 /* Sección sobre nosotros */
 .about-us {
     padding: 50px;
@@ -261,16 +279,18 @@ button:hover {
 }
 
 .resource-item {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .resource-item:hover {
-    transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
+
 
 .resource-link {
     display: block;
@@ -376,4 +396,28 @@ button:hover {
 
 .libro a:hover {
   text-decoration: underline;
+}
+
+.recurso-extra {
+  display: none;
+}
+
+.recurso-extra.mostrar {
+  display: block;
+}
+
+
+#ver-mas {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#ver-mas:hover {
+  background-color: #45a049;
 }

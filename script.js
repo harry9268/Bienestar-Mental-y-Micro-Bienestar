@@ -38,26 +38,28 @@ function calculateResult() {
     resultDiv.innerHTML = `<p>${message}</p>`;
 }
 
-const contactoForm = document.getElementById('form-contacto');
+const contactoForm = document.querySelector('#contacto form');
 const mensajeDiv = document.getElementById('form-mensaje');
 
-contactoForm.addEventListener("submit", async function(e) {
+if (contactoForm) {
+  contactoForm.addEventListener("submit", async function(e) {
     e.preventDefault();
     const data = new FormData(contactoForm);
     const action = contactoForm.action;
 
-const response = await fetch(action, {
-    method: 'POST',
-    body: data,
-    headers: {
-    'Accept': 'application/json'
-    }
+    const response = await fetch(action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
     });
 
-if (response.ok) {
-    mensajeDiv.innerHTML = "<p style='color:green;'>¡Mensaje enviado correctamente! Te responderemos pronto.</p>";
-    contactoForm.reset();
-} else {
-    mensajeDiv.innerHTML = "<p style='color:red;'>Hubo un error al enviar tu mensaje. Intenta nuevamente.</p>";
+    if (response.ok) {
+      mensajeDiv.innerHTML = "<p style='color:green;'>¡Mensaje enviado correctamente! Te responderemos pronto.</p>";
+      contactoForm.reset();
+    } else {
+      mensajeDiv.innerHTML = "<p style='color:red;'>Hubo un error al enviar tu mensaje. Intenta nuevamente.</p>";
+    }
+  });
 }
-});

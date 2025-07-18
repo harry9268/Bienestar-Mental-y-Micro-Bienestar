@@ -19,11 +19,13 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Z7FJ0FNHMC');
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9700570899324856"
      crossorigin="anonymous"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <meta name="description" content="Mejora tu bienestar mental con nuestras guías de meditación, mindfulness y técnicas para reducir el estrés.">
     <meta name="keywords" content="bienestar mental, meditación, mindfulness, relajación, estrés">
     <title>Bienestar Mental y Micro-Bienestar</title>
@@ -42,11 +44,17 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M32D8MMF"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <script>
+      AOS.init();
+    </script>
+
     <header>
         <h1>Bienestar Mental y Micro-Bienestar</h1>
         <nav>
             <a href="#bienvenida">Bienvenida</a>
             <a href="#beneficios">Beneficios</a>
+            <a href="#recursos">Artículos</a>
+            <a href="#test">Test</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
@@ -55,15 +63,13 @@
     <section class="hero">
         <h2>Tu bienestar mental es importante</h2>
         <p>Descubre cómo la meditación y el mindfulness pueden transformar tu vida.</p>
-        <a href="#contacto">Contáctanos</a>
+        <a href="#recursos" class="btn-principal">Empieza tu camino hacia la calma</a>
     </section>
 
     <!-- Sección Sobre Nosotros -->
     <section class="about-us" id="bienvenida">
-        <h2>Bienvenido a Bienestar Mental</h2>
-        <p>En Bienestar Mental, creemos que la paz interior comienza con la comprensión y el cuidado de nuestra mente. Nuestro sitio está diseñado para proporcionarte las herramientas y los recursos necesarios para mejorar tu bienestar emocional y mental. Ya sea que busques reducir el estrés, aumentar tu enfoque, o simplemente encontrar momentos de tranquilidad en tu vida, aquí encontrarás guías, meditaciones, artículos y consejos prácticos.</p>
-        <p>A través de la práctica del mindfulness, la meditación y la respiración consciente, podrás cultivar hábitos que transformen tu vida diaria.</p>
-        <p>¡Explora nuestras secciones y empieza tu viaje hacia una mente más tranquila y equilibrada!</p>
+        <h2>¿Te cuesta desconectar? Este es tu refugio digital.</h2>
+        <p>Bienestar Mental no es solo una web: es un espacio creado para ayudarte a recuperar la calma, dormir mejor, dejar de sobrepensar y sentirte acompañado. Aquí no hay juicios, solo herramientas sencillas que funcionan.</p>
     </section>
 
 
@@ -88,103 +94,104 @@
     <h2>Recursos y Artículos</h2>
         <p>A continuación, te ofrecemos algunos recursos útiles para tu bienestar mental:</p>
         <div class="resources-container">
-            <div class="resource-item">
+            <div class="resource-item" data-aos="fade-up">
                 <a href="articulos/guia-meditacion.html" class="resource-link">
                     <img src="images/BienestarMental.png" alt="Guía Completa de Meditación">
                     <p>Guía Completa para Empezar con la Meditación</p>
                 </a>
             </div>
-            <div class="resource-item">
+            <div class="resource-item" data-aos="fade-up">
                 <a href="articulos/guia-de-respiracion.html" class="resource-link">
                     <img src="images/Guiaderespiracion.png" alt="Técnicas de Respiración">
                     <p>5 Técnicas de Respiración para Reducir el Estrés</p>
                 </a>
             </div>
-            <div class="resource-item">
+            <div class="resource-item" data-aos="fade-up">
                 <a href="articulos/mindfulness-diario.html" class="resource-link">
                     <img src="images/MindfulnessDiario.png" alt="Mindfulness Diario">
                     <p>Cómo Establecer una Rutina de Mindfulness</p>
                 </a>
             </div>
-            <div class="resource-item">
+            <div class="resource-item" data-aos="fade-up">
                 <a href="articulos/meditacion-guiada.html" class="resource-link">
                     <img src="images/MeditacionGuiada.png" alt="Meditación Guiada">
                     <p>Video: Meditación Guiada para Principiantes</p>
                 </a>
             </div>
-            <div class="resource-item">
+            <div class="resource-item" data-aos="fade-up">
                 <a href="articulos/yoga-principiantes-estiramientos.html" class="resource-link">
                     <img src="images/yoga-principiantes-estiramientos.png" alt="Yoga para Principiantes">
                     <p>Yoga para Principiantes y Estiramientos para Dormir Mejor y Despertar con Energía</p>
                 </a>
             </div>
-            <div class="resource-item">
+            <div class="resource-item" data-aos="fade-up">
                 <a href="articulos/tecnicas-practicasde-bienestar-mental.html" class="resource-link">
                     <img src="images/Técnicasprácticasdebienestarmental.png" alt="Técnicas prácticas de bienestar mental">
                     <p>Cómo dejar de sobrepensar por las noches: técnicas prácticas de bienestar mental</p>
                 </a>
             </div>
-            <div class="resource-item">
-                <a href="articulos/como-dejar-de-sobrepensar.html" class="resource-link">
-                    <img src="images/como-dejar-de-sobrepensar.png" alt="Cómo dejar de sobrepensar antes de dormir">
-                    <p>Cómo dejar de sobrepensar antes de dormir: Guía Práctica y Rutina Nocturna</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/rutina-corta-ansiedad.html" class="resource-link">
-                    <img src="images/rutina-corta-ansiedad.png" alt="Rutina de 5 minutos para reducir la ansiedad diaria">
-                    <p>Rutina de 5 minutos para reducir la ansiedad diaria</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/habitos-mananeros-estres.html" class="resource-link">
-                    <img src="images/habitos-mananeros-portada.png" alt="Portada hábitos mañaneros sin estrés">
-                    <p>7 hábitos mañaneros para reducir estrés</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/journal-para-la-ansiedad.html" class="resource-link">
-                    <img src="images/journal-ansiedad-portada.png" alt="Journal para la ansiedad">
-                    <p>Journal para la ansiedad: empieza hoy</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/meditación-guiada-para-principiantes.html" class="resource-link">
-                    <img src="images/meditacion-guiada-portada.png" alt="Meditación guiada para principiantes">
-                    <p>Meditación guiada para principiantes: paso a paso</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/respiracion-ataques-panico.html" class="resource-link">
-                    <img src="images/respiracion-diafragmatica.png" alt="Respiración diafragmática para ataques de pánico">
-                    <p>Técnicas de respiración para controlar ataques de pánico</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/rincon-de-paz-en-casa.html" class="resource-link">
-                    <img src="images/rincon-espacio-definido.png" alt="Rincón de paz en casa bien definido y organizado">
-                    <p>Cómo crear un rincón de paz en casa</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/5-micro-habitos.html" class="resource-link">
-                    <img src="images/micro-habitos-portada.png" alt="Micro-hábitos bienestar diario">
-                    <p>5 micro-hábitos para sentirte mejor cada día</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/como-dejar-celular.html" class="resource-link">
-                    <img src="images/como-dejar-celular.png" alt="Infografía cómo dejar el celular antes de dormir">
-                    <p>Cómo dejar el celular antes de dormir: 15 pasos efectivos para un sueño profundo</p>
-                </a>
-            </div>
-            <div class="resource-item">
-                <a href="articulos/calmar-mente-rapido.html" class="resource-link">
-                    <img src="images/calmar-mente-rapido-portada.png" alt="Cómo calmar la mente rápido">
-                    <p>Cómo calmar la mente en 60 segundos</p>
-                </a>
-            </div>
-        </div>
+            
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/como-dejar-de-sobrepensar.html" class="resource-link">
+                        <img src="images/como-dejar-de-sobrepensar.png" alt="Cómo dejar de sobrepensar antes de dormir">
+                        <p>Cómo dejar de sobrepensar antes de dormir: Guía Práctica y Rutina Nocturna</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/rutina-corta-ansiedad.html" class="resource-link">
+                        <img src="images/rutina-corta-ansiedad.png" alt="Rutina de 5 minutos para reducir la ansiedad diaria">
+                        <p>Rutina de 5 minutos para reducir la ansiedad diaria</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/habitos-mananeros-estres.html" class="resource-link">
+                        <img src="images/habitos-mananeros-portada.png" alt="Portada hábitos mañaneros sin estrés">
+                        <p>7 hábitos mañaneros para reducir estrés</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/journal-para-la-ansiedad.html" class="resource-link">
+                        <img src="images/journal-ansiedad-portada.png" alt="Journal para la ansiedad">
+                        <p>Journal para la ansiedad: empieza hoy</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/meditación-guiada-para-principiantes.html" class="resource-link">
+                        <img src="images/meditacion-guiada-portada.png" alt="Meditación guiada para principiantes">
+                        <p>Meditación guiada para principiantes: paso a paso</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/respiracion-ataques-panico.html" class="resource-link">
+                        <img src="images/respiracion-diafragmatica.png" alt="Respiración diafragmática para ataques de pánico">
+                        <p>Técnicas de respiración para controlar ataques de pánico</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/rincon-de-paz-en-casa.html" class="resource-link">
+                        <img src="images/rincon-espacio-definido.png" alt="Rincón de paz en casa bien definido y organizado">
+                        <p>Cómo crear un rincón de paz en casa</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/5-micro-habitos.html" class="resource-link">
+                        <img src="images/micro-habitos-portada.png" alt="Micro-hábitos bienestar diario">
+                        <p>5 micro-hábitos para sentirte mejor cada día</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/como-dejar-celular.html" class="resource-link">
+                        <img src="images/como-dejar-celular.png" alt="Infografía cómo dejar el celular antes de dormir">
+                        <p>Cómo dejar el celular antes de dormir: 15 pasos efectivos para un sueño profundo</p>
+                    </a>
+                </div>
+                <div class="resource-item" data-aos="fade-up">
+                    <a href="articulos/calmar-mente-rapido.html" class="resource-link">
+                        <img src="images/calmar-mente-rapido-portada.png" alt="Cómo calmar la mente rápido">
+                        <p>Cómo calmar la mente en 60 segundos</p>
+                    </a>
+                </div>    
+        </div>        
     </section>
 
     <section id="test">
