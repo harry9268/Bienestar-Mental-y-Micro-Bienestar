@@ -1,60 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://bienestarmental.top/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bienestarmental.top/articulos/como-dejar-de-sobrepensar.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://bienestarmental.top/articulos/guia-de-respiracion.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://bienestarmental.top/articulos/guia-meditacion.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://bienestarmental.top/articulos/meditacion-guiada.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://bienestarmental.top/articulos/mindfulness-diario.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://bienestarmental.top/articulos/tecnicas-practicasde-bienestar-mental.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://bienestarmental.top/articulos/yoga-principiantes-estiramientos.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://bienestarmental.top/articulos/journal-para-la-ansiedad.html</loc>
-  </url>
-  <url>
-    <loc>https://bienestarmental.top/articulos/habitos-mananeros-estres.html</loc>
-  </url>
-  <url>
-    <loc>https://bienestarmental.top/articulos/meditación-guiada-para-principiantes.html</loc>
-  </url>
-  <url>
-    <loc>https://bienestarmental.top/articulos/respiracion-ataques-panico.html</loc>
-  </url>
-  <url>
-    <loc>https://bienestarmental.top/articulos/rutina-corta-ansiedad.html</loc>
-  </url>
-  <url>
-    <loc>https://bienestarmental.top/articulos/rincon-de-paz-en-casa.html</loc>
-  </url>
-  <url>
-    <loc>https://bienestarmental.top/articulos/como-dejar-celular.html</loc>
-  </url>
-  <url>
-    <loc>https://bienestarmental.top/articulos/5-micro-habitos.html</loc>
-  </url>
+
+  <url><loc>https://bienestarmental.top/</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/5-micro-habitos.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/articulo.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/calmar-mente-rapido.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/como-dejar-celular.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/como-dejar-de-sobrepensar.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/desconectar-despues-del-trabajo.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/guia-de-respiracion.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/guia-meditacion.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/habitos-mananeros-estres.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/journal-para-la-ansiedad.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/meditacion-guiada.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/meditacion-guiada-para-principiantes.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/mejores-podcasts-bienestar-mental.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/mindfulness-diario.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/respiracion-ataques-panico.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/rincon-de-paz-en-casa.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/rutina-corta-ansiedad.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/sintomas-de-burnout.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/tecnicas-practicasde-bienestar-mental.html</loc></url>
+  <url><loc>https://bienestarmental.top/articulos/yoga-principiantes-estiramientos.html</loc></url>
+
 </urlset>
