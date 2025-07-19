@@ -188,11 +188,17 @@ nav a:hover {
 
 /* Pie de página */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  width: 100vw; /* fuerza a que ocupe el 100% del viewport */
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: relative;
+  left: 0;
+  margin-left: calc(-50vw + 50%);
 }
+
 
 footer a {
     color: white;
