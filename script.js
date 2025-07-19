@@ -63,3 +63,24 @@ if (contactoForm) {
     }
   });
 }
+
+// Mostrar/Ocultar recursos adicionales
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('toggle-recursos');
+  const hiddenResources = document.querySelectorAll('.hidden-resource');
+  let expanded = false;
+
+  toggleBtn.addEventListener('click', () => {
+    hiddenResources.forEach(item => {
+      item.style.display = expanded ? 'none' : 'block';
+    });
+
+    toggleBtn.textContent = expanded ? 'Ver más' : 'Ver menos';
+    expanded = !expanded;
+  });
+
+  // Ocultar inicialmente
+  hiddenResources.forEach(item => {
+    item.style.display = 'none';
+  });
+});
