@@ -474,3 +474,18 @@ button:hover {
 #toggle-recursos:hover {
   background-color: #45a049;
 }
+
+.buscador-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#buscador {
+  width: 90%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

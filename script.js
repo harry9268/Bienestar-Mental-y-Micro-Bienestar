@@ -84,3 +84,17 @@ document.addEventListener('DOMContentLoaded', () => {
     item.style.display = 'none';
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('buscador');
+    const recursos = document.querySelectorAll('.resource-item');
+
+    input.addEventListener('keyup', () => {
+      const filtro = input.value.toLowerCase();
+
+      recursos.forEach(item => {
+        const texto = item.textContent.toLowerCase();
+        item.style.display = texto.includes(filtro) ? 'block' : 'none';
+      });
+    });
+});
