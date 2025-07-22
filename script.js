@@ -86,15 +86,82 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const input = document.getElementById('buscador');
-    const recursos = document.querySelectorAll('.resource-item');
+  const input = document.getElementById('buscador');
+  const recursos = document.querySelectorAll('.resource-item');
+  const toggleBtn = document.getElementById('toggle-recursos');
+  const contador = document.getElementById('contador-resultados');
 
-    input.addEventListener('keyup', () => {
-      const filtro = input.value.toLowerCase();
+  // 🔍 Función de búsqueda
+  input.addEventListener('input', () => {
+  const filtro = input.value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, '') // Elimina tildes
+    .trim();
 
-      recursos.forEach(item => {
-        const texto = item.textContent.toLowerCase();
-        item.style.display = texto.includes(filtro) ? 'block' : 'none';
-      });
+  let encontrados = 0;
+  let hayFiltro = filtro.length > 0;
+
+  recursos.forEach(item => {
+    const textoVisible = item.textContent
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, '');
+
+    const imagen = item.querySelector('img');
+    const altTexto = imagen ? imagen.alt
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, '') : '';
+
+    const texto = textoVisible + ' ' + altTexto;
+
+    const coincide = texto.includes(filtro);
+
+    if (coincide) {
+      item.style.display = 'block';
+      encontrados++;
+    } else {
+      item.style.display = 'none';
+    }
+  });
+  
+  if (hayFiltro) {
+    contador.textContent = encontrados > 0
+      ? `🔎 ${encontrados} resultado${encontrados > 1 ? 's' : ''} encontrado${encontrados > 1 ? 's' : ''}`
+      : '❌ No se encontraron artículos con esa palabra';
+    toggleBtn.style.display = 'none';
+  } else {
+    contador.textContent = '';
+    toggleBtn.style.display = 'inline-block';
+    resetVerMas(); // ← este es el que vuelve al estado inicial
+  }
+
+});
+
+  // 🔁 Reiniciar al estado inicial (solo 6 visibles)
+  function resetVerMas() {
+    const recursosExtra = document.querySelectorAll('.resource-item:nth-child(n+7)');
+    recursos.forEach(item => item.classList.remove('hidden-resource'));
+    recursosExtra.forEach(item => item.classList.add('hidden-resource'));
+    toggleBtn.textContent = 'Ver más';
+    toggleBtn.dataset.estado = 'cerrado';
+  }
+
+  // 👁️ Función del botón Ver más / Ver menos
+  toggleBtn.dataset.estado = 'cerrado';
+  toggleBtn.addEventListener('click', () => {
+    const recursosExtra = document.querySelectorAll('.resource-item:nth-child(n+7)');
+    const expandido = toggleBtn.dataset.estado === 'abierto';
+
+    recursosExtra.forEach(item => {
+      item.classList.toggle('hidden-resource', expandido);
     });
+
+    toggleBtn.textContent = expandido ? 'Ver más' : 'Ver menos';
+    toggleBtn.dataset.estado = expandido ? 'cerrado' : 'abierto';
+  });
+
+  // Inicializar mostrando solo los primeros 6
+  resetVerMas();
 });
