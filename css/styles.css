@@ -514,9 +514,10 @@ button:hover {
     margin-top: 15px;
   }
 }
+
 #cookie-wall {
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* mejora la fluidez en iOS */
+  -webkit-overflow-scrolling: touch;
 }
 
 #cookie-wall > div {
@@ -524,6 +525,7 @@ button:hover {
   overflow-y: auto;
 }
 
+/* ✅ UNIFICADO PARA <= 600px */
 @media screen and (max-width: 600px) {
   #cookie-wall h2 {
     font-size: 18px;
@@ -538,10 +540,8 @@ button:hover {
   #cookie-wall {
     padding: 10px !important;
   }
-}
-@media screen and (max-width: 600px) {
+
   #cookie-wall > div {
     margin-bottom: 60px !important;
   }
 }
-
