@@ -207,3 +207,4 @@ function rechazarCookies() {
   // Redirigir al contenido sin publicidad
   window.location.href = "/acceso-sin-cookies.html"; // Asegúrate de que exista esta página
 }
+

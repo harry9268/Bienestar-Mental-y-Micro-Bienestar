@@ -539,4 +539,9 @@ button:hover {
     padding: 10px !important;
   }
 }
+@media screen and (max-width: 600px) {
+  #cookie-wall > div {
+    margin-bottom: 60px !important;
+  }
+}
 
