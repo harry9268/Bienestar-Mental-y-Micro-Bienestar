@@ -524,3 +524,19 @@ button:hover {
   overflow-y: auto;
 }
 
+@media screen and (max-width: 600px) {
+  #cookie-wall h2 {
+    font-size: 18px;
+  }
+
+  #cookie-wall p,
+  #cookie-wall a,
+  #cookie-wall button {
+    font-size: 14px !important;
+  }
+
+  #cookie-wall {
+    padding: 10px !important;
+  }
+}
+
