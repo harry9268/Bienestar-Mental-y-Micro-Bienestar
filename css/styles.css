@@ -490,22 +490,27 @@ button:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-#cookie-wall {
-  max-width: 90%;
-  margin: auto;
-  padding: 20px;
-  font-size: 16px;
-  box-sizing: border-box;
-}
+@media screen and (max-width: 768px) {
+  #cookie-wall > div {
+    max-width: 95vw !important;
+    padding: 20px !important;
+  }
 
-@media (max-width: 600px) {
-  #cookie-wall {
-    font-size: 14px;
-    padding: 15px;
+  #cookie-wall h2 {
+    font-size: 18px !important;
+  }
+
+  #cookie-wall > div > div {
+    flex-direction: column !important;
+  }
+
+  #cookie-wall > div > div > div {
+    border: none !important;
+    padding: 0 !important;
   }
 
   #cookie-wall button {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }
