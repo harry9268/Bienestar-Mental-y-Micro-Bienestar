@@ -514,3 +514,13 @@ button:hover {
     margin-top: 15px;
   }
 }
+#cookie-wall {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* mejora la fluidez en iOS */
+}
+
+#cookie-wall > div {
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
