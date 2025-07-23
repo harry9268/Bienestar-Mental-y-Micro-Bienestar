@@ -489,3 +489,23 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+#cookie-wall {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  #cookie-wall {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  #cookie-wall button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
