@@ -179,7 +179,18 @@ function aceptarCookies() {
   const wall = document.getElementById("cookie-wall");
   if (wall) wall.style.display = "none";
 
-  // Insertar Google Analytics solo si se aceptan cookies
+  // Insertar Google Tag Manager
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M32D8MMF'); // Pon tu ID aquí
+
+  // Insertar Google Analytics (GA4)
   const gaScript = document.createElement('script');
   gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-Z7FJ0FNHMC";
   gaScript.async = true;
@@ -189,7 +200,7 @@ function aceptarCookies() {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-Z7FJ0FNHMC');
+    gtag('config', 'G-Z7FJ0FNHMC'); // Pon tu ID GA4 aquí
   };
 
   // Insertar Google AdSense
@@ -200,6 +211,7 @@ function aceptarCookies() {
   document.head.appendChild(ads);
 }
 
+
 function rechazarCookies() {
   // Marcar que rechazó cookies
   localStorage.setItem("consentimientoCookies", "rechazadas");
@@ -207,4 +219,3 @@ function rechazarCookies() {
   // Redirigir al contenido sin publicidad
   window.location.href = "/acceso-sin-cookies.html"; // Asegúrate de que exista esta página
 }
-
