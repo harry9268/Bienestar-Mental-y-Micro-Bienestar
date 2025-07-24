@@ -4,15 +4,6 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-M32D8MMF');</script>
-  <!-- End Google Tag Manager -->
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9700570899324856"
-     crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Prueba esta rutina de 5 minutos para reducir la ansiedad diaria y recuperar la calma.">
   <meta name="keywords" content="rutina corta para reducir ansiedad, reducir ansiedad rápido, ejercicios para ansiedad, bienestar mental, técnicas de relajación">
@@ -20,6 +11,7 @@
   <title>Rutina de 5 minutos para reducir la ansiedad diaria</title>
   <link rel="canonical" href="https://bienestarmental.top/articulos/rutina-corta-ansiedad.html">
   <link rel="stylesheet" href="../css/articulo.css">
+  <link rel="stylesheet" href="../css/banner.css">
   <link rel="icon" href="../images/logo.webp" type="image/png">
 
 <body>
@@ -101,5 +93,56 @@
   <footer>
     <p>&copy; 2025 Bienestar Mental. Todos los derechos reservados.</p>
   </footer>
+
+  <!-- BANNER CON LEER MÁS ESTILO XATAKA POR COLUMNA -->
+    <div id="cookie-wall">
+    <div>
+        <h2>Configura tu experiencia: elige cómo acceder a nuestro contenido</h2>
+        <p>
+        En <strong>bienestarmental.top</strong> compartimos contenido gratuito sobre meditación, ansiedad y bienestar mental. Para seguir ofreciéndolo sin coste, puedes elegir entre estas dos opciones:
+        </p>
+
+        <div class="opciones">
+        <!-- Columna izquierda -->
+        <div class="opcion">
+            <h3>Accede sin anuncios por 2€</h3>
+            <p>Navega sin publicidad ni cookies de seguimiento.</p>
+
+            <div id="leer-mas-sin" class="leer-mas">
+            <p>
+                Solo se usarán cookies esenciales para el funcionamiento básico del sitio. No se analizará tu navegación ni se mostrará publicidad personalizada. Esta opción es ideal si deseas una experiencia más privada.
+            </p>
+            <p>
+                <a href="/condiciones-oferta.html" target="_blank">Consultar condiciones de la oferta</a>
+            </p>
+            </div>
+
+            <p><a href="#" onclick="mostrarMas('sin'); return false;" id="btn-mas-sin">Leer más &gt;</a></p>
+
+            <button onclick="rechazarCookies()" class="btn-rechazar">Rechazar y suscribirme por 2€</button>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="opcion">
+            <h3>Accede gratis con cookies publicitarias</h3>
+            <p>Aceptas cookies de publicidad personalizada.</p>
+
+            <div id="leer-mas-gratis" class="leer-mas">
+            <p>
+                Permitimos a plataformas como Google AdSense analizar tu navegación y mostrarte anuncios relevantes. Esto nos ayuda a financiar el sitio. Puedes cambiar de opinión desde la política de cookies.
+            </p>
+            <p>
+                <a href="/politica-cookies.html">Ver política de cookies</a>
+            </p>
+            </div>
+
+            <p><a href="#" onclick="mostrarMas('gratis'); return false;" id="btn-mas-gratis">Leer más &gt;</a></p>
+
+            <button onclick="aceptarCookies()" class="btn-aceptar">Aceptar y leer GRATIS</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="../js/banner.js"></script>
 </body>
 </html>
