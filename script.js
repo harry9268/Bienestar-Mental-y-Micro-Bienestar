@@ -219,3 +219,13 @@ function rechazarCookies() {
   // Redirigir al contenido sin publicidad
   window.location.href = "/acceso-sin-cookies.html"; // Asegúrate de que exista esta página
 }
+
+  function mostrarMas(opcion) {
+    if (opcion === 'sin') {
+      document.getElementById('leer-mas-sin').style.display = 'block';
+      document.getElementById('btn-mas-sin').style.display = 'none';
+    } else if (opcion === 'gratis') {
+      document.getElementById('leer-mas-gratis').style.display = 'block';
+      document.getElementById('btn-mas-gratis').style.display = 'none';
+    }
+  }

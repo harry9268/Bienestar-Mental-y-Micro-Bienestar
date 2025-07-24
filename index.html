@@ -4,13 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M32D8MMF');</script>
-    <!-- End Google Tag Manager -->
     <meta name="description" content="Mejora tu bienestar mental con nuestras guías de meditación, mindfulness y técnicas para reducir el estrés.">
     <meta name="keywords" content="bienestar mental, meditación, mindfulness, relajación, estrés">
     <title>Bienestar Mental y Micro-Bienestar</title>
@@ -20,8 +13,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="/images/logo.webp" type="image/png">
     <link rel="canonical" href="https://bienestarmental.top">
-</script>
-
 </head>
 
 <body>
@@ -543,43 +534,55 @@
         <p>&copy; 2025 Bienestar Mental. Todos los derechos reservados.</p>
         <p><a href="privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos de Servicio</a></p>
     </footer>
-    <!-- BANNER PERSONALIZADO ESTILO XATAKA -->
+    <!-- BANNER CON LEER MÁS ESTILO XATAKA POR COLUMNA -->
     <div id="cookie-wall" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; align-items: center; justify-content: center; overflow-y: auto; padding: 20px;">
-        <div style="background: white; width: 100%; max-width: 960px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.3); font-family: sans-serif;">
-        <h2 style="text-align: center; margin-bottom: 15px;">Configura tu experiencia: elige cómo acceder a nuestro contenido</h2>
-        <p style="margin-bottom: 25px; line-height: 1.6;">
-        En <strong>bienestarmental.top</strong> compartimos contenidos gratuitos sobre meditación, ansiedad y salud mental gracias a los anuncios personalizados que mostramos a los usuarios. 
-        Para seguir ofreciéndote recursos de calidad sin coste, puedes elegir entre estas dos opciones:
+    <div style="background: white; width: 100%; max-width: 960px; padding: 30px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.3); font-family: sans-serif;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Configura tu experiencia: elige cómo acceder a nuestro contenido</h2>
+        <p style="line-height: 1.6; margin-bottom: 25px;">
+        En <strong>bienestarmental.top</strong> compartimos contenido gratuito sobre meditación, ansiedad y bienestar mental. Para seguir ofreciéndolo sin coste, puedes elegir entre estas dos opciones:
         </p>
 
-        <div style="display: flex; flex-direction: column; gap: 20px;">
-        <div style="display: flex; flex-direction: row; gap: 20px; border-top: 1px solid #ddd; padding-top: 20px;">
-            <div style="flex: 1;">
-            <h3 style="color: #333;">Accede sin anuncios por 2€</h3>
+        <div style="display: flex; flex-direction: row; gap: 20px;">
+        <!-- Columna izquierda -->
+        <div style="flex: 1; border: 1px solid #ddd; padding: 20px;">
+            <h3>Accede sin anuncios por 2€</h3>
+            <p style="font-size: 15px; line-height: 1.5;">Navega sin publicidad ni cookies de seguimiento.</p>
+
+            <div id="leer-mas-sin" style="display: none;">
             <p style="font-size: 15px; line-height: 1.5;">
-                Si eliges esta opción, no se usarán cookies publicitarias ni se analizará tu navegación. Solo se usarán cookies esenciales para el funcionamiento básico de la web.
+                Solo se usarán cookies esenciales para el funcionamiento básico del sitio. No se analizará tu navegación ni se mostrará publicidad personalizada. Esta opción es ideal si deseas una experiencia más privada.
             </p>
             <p style="font-size: 14px;">
-                <a href="/condiciones-oferta.html" target="_blank" style="color: #38b000; text-decoration: underline;">Consultar las condiciones de la oferta</a>
+                <a href="/condiciones-oferta.html" target="_blank" style="color: #38b000; text-decoration: underline;">Consultar condiciones de la oferta</a>
             </p>
-            <button onclick="rechazarCookies()" style="margin-top: 10px; background-color: #ccc; color: #000; border: none; padding: 10px 15px; font-weight: bold; border-radius: 6px; cursor: pointer;">
-                Rechazar y suscribirme por 2€
-            </button>
             </div>
 
-            <div style="flex: 1; border-left: 1px solid #ddd; padding-left: 20px;">
-            <h3 style="color: #333;">Accede gratis con cookies publicitarias</h3>
+            <p><a href="#" onclick="mostrarMas('sin'); return false;" id="btn-mas-sin" style="color: #38b000; font-weight: bold;">Leer más &gt;</a></p>
+
+            <button onclick="rechazarCookies()" style="margin-top: 10px; background-color: #ccc; color: #000; border: none; padding: 10px 15px; font-weight: bold; border-radius: 6px; cursor: pointer;">
+            Rechazar y suscribirme por 2€
+            </button>
+        </div>
+
+        <!-- Columna derecha -->
+        <div style="flex: 1; border: 1px solid #ddd; padding: 20px;">
+            <h3>Accede gratis con cookies publicitarias</h3>
+            <p style="font-size: 15px; line-height: 1.5;">Aceptas cookies de publicidad personalizada.</p>
+
+            <div id="leer-mas-gratis" style="display: none;">
             <p style="font-size: 15px; line-height: 1.5;">
-                Si eliges continuar gratis, aceptas el uso de cookies de publicidad como Google AdSense para mostrarte anuncios personalizados y ayudarnos a financiar este proyecto.
-                Puedes retirar tu consentimiento en cualquier momento desde el enlace de “Política de Cookies”.
+                Permitimos a plataformas como Google AdSense analizar tu navegación y mostrarte anuncios relevantes. Esto nos ayuda a financiar el sitio. Puedes cambiar de opinión desde la política de cookies.
             </p>
             <p style="font-size: 14px;">
                 <a href="/politica-cookies.html" style="color: #38b000; text-decoration: underline;">Ver política de cookies</a>
             </p>
-            <button onclick="aceptarCookies()" style="margin-top: 10px; background-color: #38b000; color: white; border: none; padding: 10px 15px; font-weight: bold; border-radius: 6px; cursor: pointer;">
-                Aceptar y leer GRATIS
-            </button>
             </div>
+
+            <p><a href="#" onclick="mostrarMas('gratis'); return false;" id="btn-mas-gratis" style="color: #38b000; font-weight: bold;">Leer más &gt;</a></p>
+
+            <button onclick="aceptarCookies()" style="margin-top: 10px; background-color: #38b000; color: white; border: none; padding: 10px 15px; font-weight: bold; border-radius: 6px; cursor: pointer;">
+            Aceptar y leer GRATIS
+            </button>
         </div>
         </div>
     </div>
