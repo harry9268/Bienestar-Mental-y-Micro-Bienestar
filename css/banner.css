@@ -1,112 +1,111 @@
-
-/* Estilos del banner de cookies estilo Xataka */
-#cookie-wall {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.7);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: auto;
-  padding: 20px;
-  -webkit-overflow-scrolling: touch;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-#cookie-wall > div {
-  background: white;
-  width: 100%;
-  max-width: 960px;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-  font-family: sans-serif;
-  max-height: 95vh;
-  overflow-y: auto;
+body {
+	background: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
 }
 
-#cookie-wall h2 {
-  text-align: center;
-  margin-bottom: 20px;
+p {
+	margin-bottom: 20px;
+	line-height: 150%;
 }
 
-#cookie-wall p {
-  font-size: 15px;
-  line-height: 1.5;
+main {
+	margin: 20px auto;
+	max-width: 1000px;
+	background: #fff;
+	min-height: 80vh;
+	padding: 20px;
+	border-radius: 10px;
 }
 
-#cookie-wall h3 {
-  color: #333;
+.aviso-cookies {
+	display: none;
+	position: fixed;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+	padding: 40px 30px 30px;
+	width: 90%;
+	max-width: 400px;
+	border-radius: 20px;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	z-index: 100;
 }
 
-#cookie-wall a {
-  color: #38b000;
-  text-decoration: underline;
+.aviso-cookies.activo {
+	display: block;
 }
 
-#cookie-wall button {
-  margin-top: 10px;
-  border: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
+.aviso-cookies .galleta {
+	width: 80px;
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-#cookie-wall .opciones {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+.aviso-cookies .titulo {
+	font-size: 22px;
+	margin-bottom: 10px;
+	color: #333;
+	font-weight: bold;
 }
 
-#cookie-wall .opcion {
-  flex: 1;
-  border: 1px solid #ddd;
-  padding: 20px;
+.aviso-cookies .parrafo {
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 20px;
 }
 
-#cookie-wall .opcion + .opcion {
-  border-left: none;
+.aviso-cookies .boton {
+	width: 100%;
+	padding: 15px;
+	font-size: 16px;
+	background: #4DBFFF;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.3s;
 }
 
-#cookie-wall .leer-mas {
-  display: none;
+.aviso-cookies .boton:hover {
+	background: #1ea0e6;
 }
 
-@media screen and (max-width: 768px) {
-  #cookie-wall > div {
-    max-width: 95vw !important;
-    padding: 20px !important;
-  }
-
-  #cookie-wall h2 {
-    font-size: 18px !important;
-  }
-
-  #cookie-wall .opciones {
-    flex-direction: column !important;
-  }
-
-  #cookie-wall .opcion {
-    border: none !important;
-    padding: 0 !important;
-  }
-
-  #cookie-wall button {
-    width: 100%;
-    margin-top: 15px;
-  }
+.aviso-cookies .enlace {
+	display: inline-block;
+	margin-top: 10px;
+	color: #4DBFFF;
+	text-decoration: none;
+	font-size: 14px;
 }
 
-#cookie-wall .btn-rechazar {
-  background-color: #ccc;
-  color: #000;
+.aviso-cookies .enlace:hover {
+	text-decoration: underline;
 }
 
-#cookie-wall .btn-aceptar {
-  background-color: #38b000;
-  color: #fff;
+.fondo-aviso-cookies {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(2px);
+	z-index: 99;
+}
+
+.fondo-aviso-cookies.activo {
+	display: block;
 }
